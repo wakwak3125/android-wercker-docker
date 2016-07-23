@@ -32,3 +32,7 @@ RUN echo y | android update sdk --no-ui --force --all --filter "android-23,andro
 RUN echo y | android update sdk --no-ui --force --all --filter "extra-android-m2repository,extra-google-google_play_services,extra-google-m2repository"
 
 RUN add-apt-repository -y ppa:brightbox/ruby-ng && apt-get update && apt-get install -y ruby2.3
+
+RUN gem install fastlane
+RUN gem install supply
+
