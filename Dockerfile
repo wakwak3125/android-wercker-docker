@@ -3,6 +3,8 @@ MAINTAINER Ryo Sakaguchi <rsakaguchi3125@gmail.com>
 
 RUN apt-get update -y && apt-get upgrade -y
 
+RUN apt-get install build-essential
+
 RUN apt-get install -y git
 
 RUN \
@@ -34,6 +36,7 @@ RUN echo y | android update sdk --no-ui --force --all --filter "extra-android-m2
 RUN add-apt-repository -y ppa:brightbox/ruby-ng && apt-get update && apt-get install -y ruby2.3
 
 RUN apt-get install rubygems
-RUN gem install fastlane
+RUN xcode-select --install
+RUN sudo gem install fastlane --verbose
 RUN gem install supply
 
