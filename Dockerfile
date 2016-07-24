@@ -7,6 +7,8 @@ RUN apt-get update -y && apt-get -y install build-essential
 
 RUN apt-get install -y git
 
+RUN apt-get install -y unzip
+
 RUN \
   apt-get install -y software-properties-common curl && \
   add-apt-repository -y ppa:openjdk-r/ppa && \
