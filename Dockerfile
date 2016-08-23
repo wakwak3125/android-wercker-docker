@@ -39,4 +39,4 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng && apt-get update && apt-get ins
 RUN apt-get install -y ruby2.3-dev
 RUN gem install fastlane --verbose
 RUN gem install supply
-
+RUN gem install curb
