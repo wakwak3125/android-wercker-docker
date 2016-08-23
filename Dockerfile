@@ -9,6 +9,10 @@ RUN apt-get install -y git
 
 RUN apt-get install -y unzip
 
+RUN apt-get install -y libcurl3
+RUN apt-get install -y libcurl3-gnutls
+RUN apt-get install -y libcurl4-openssl-dev
+
 RUN apt-get install -y curl
 
 RUN \
