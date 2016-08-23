@@ -9,6 +9,8 @@ RUN apt-get install -y git
 
 RUN apt-get install -y unzip
 
+RUN apt-get install -y curl
+
 RUN \
   apt-get install -y software-properties-common curl && \
   add-apt-repository -y ppa:openjdk-r/ppa && \
