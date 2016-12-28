@@ -15,6 +15,8 @@ RUN apt-get install -y libcurl4-openssl-dev
 
 RUN apt-get install -y curl
 
+RUN update-ca-certificates -f
+
 RUN \
   apt-get install -y software-properties-common curl && \
   add-apt-repository -y ppa:openjdk-r/ppa && \
