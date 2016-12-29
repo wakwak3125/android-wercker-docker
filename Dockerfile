@@ -17,7 +17,7 @@ RUN apt-get install -y curl
 
 # SSL
 RUN dpkg --purge --force-depends ca-certificates-java
-RUN apt-get install ca-certificates-java
+RUN apt-get install -y ca-certificates-java
 RUN update-ca-certificates -f
 
 RUN \
